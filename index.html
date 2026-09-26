@@ -187,10 +187,11 @@ nav .wrap{
 
   position:relative;
 
+  /* 上下の余白を圧縮 */
   padding:
-    calc(120px + env(safe-area-inset-top,0px))
+    calc(72px + env(safe-area-inset-top,0px))
     0
-    60px;
+    42px;
 
   background:
     radial-gradient(
@@ -208,10 +209,10 @@ nav .wrap{
 }
 
 .eyebrow{
-  font-size:.82rem;
+  font-size:.78rem;
   letter-spacing:.16em;
   color:var(--fg-soft);
-  margin-bottom:22px;
+  margin-bottom:16px;
 }
 
 .hero h1{
@@ -225,9 +226,12 @@ nav .wrap{
       3.7rem
     );
 
-  line-height:1.55;
+  line-height:1.45;
   line-break:strict;
   overflow-wrap:break-word;
+
+  /* 下の要素との距離を明確に */
+  margin:0;
 }
 
 .hero h1 span{
@@ -235,18 +239,19 @@ nav .wrap{
 }
 
 .hero .sub{
-  margin-top:28px;
+  margin-top:20px;
 
   font-family:"Inter",sans-serif;
 
-  font-size:1rem;
+  font-size:.95rem;
   letter-spacing:.06em;
   color:var(--fg-soft);
 }
 
 .hero .msg{
-  margin-top:14px;
-  font-size:1.1rem;
+  margin-top:10px;
+  font-size:1rem;
+  line-height:1.8;
   color:var(--fg-soft);
 }
 
@@ -1521,7 +1526,7 @@ p.body{
       <div>
         <span class="kw-word">AGRICULTURE</span>
         <span class="kw-desc jp">
-          自ら農業に取り組んだ現場感覚
+          自ら畑仕事に取り組んだ現場感覚
         </span>
       </div>
 
@@ -1560,7 +1565,7 @@ p.body{
     </h2>
 
     <p class="section-sub jp">
-      この期間は「変える」ことより
+      この期間は「攻める」ことより
       「理解する」ことを優先します。
     </p>
 
@@ -1746,7 +1751,6 @@ p.body{
       <p class="jp"
          style="color:var(--fg-soft);font-size:.98rem;">
 
-        自分自身がエンジニアとして開発するのではなく、
         営業目線から海外顧客が何を知りたいのか、
         どの情報をどう見せれば問い合わせ・商談につながるのかを定義し、
         システム担当と共同で情報設計・CTA・問い合わせ導線を設計する役割です。
@@ -1861,7 +1865,7 @@ p.body{
 
       顧客の声がKOBASHIに戻り、
       製品・サービスが進化し、
-      その結果が次の市場につながる循環として
+      その結果が次の市場につながるループとして
       海外事業を捉えます。
 
     </p>
@@ -2117,7 +2121,7 @@ p.body{
     <p class="body jp"
        style="margin-top:26px;font-size:.9rem;color:var(--fg-soft);">
 
-      各国に整える仕組み
+      営業活動に整える仕組み
 
     </p>
 
@@ -2135,7 +2139,7 @@ p.body{
     <p class="body jp" style="margin-top:22px;">
 
       日本からすべてを細かく指示するのではなく、
-      各国が自律的に判断し、
+      各事業所が自律的に判断し、
       KOBASHIと連携しながら成長できる状態を目指します。
 
     </p>
@@ -2158,7 +2162,7 @@ p.body{
     </div>
 
     <h2 class="title jp">
-      私が担いたい役割。
+      私の役割。
     </h2>
 
     <div class="roles">
@@ -2166,7 +2170,7 @@ p.body{
       <div class="role-item">
         <div class="num">01</div>
         <h3>PLAYER</h3>
-        <p class="jp">まず自分が現場に入る。</p>
+        <p class="jp">まず自分が営業現場に入る。</p>
       </div>
 
       <div class="role-item">
@@ -2190,7 +2194,7 @@ p.body{
       <div class="role-item">
         <div class="num">05</div>
         <h3>ARCHITECT</h3>
-        <p class="jp">特定の個人に依存しない、強い事業をつくる。</p>
+        <p class="jp">特定の個人に依存しない、強い事業所をつくる。</p>
       </div>
 
     </div>
