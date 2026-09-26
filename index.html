@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add('js');</script>
+<title>KOBASHI GLOBAL BUSINESS DEVELOPMENT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  /* Café palette: cream / latte / muted sage / soft terracotta */
+  --off-white:#faf6ee; --charcoal:#4d4237; --black:#54463a;
+  --green:#7d8c6b; --green-soft:#aab697; --earth:#b87f57; --earth-light:#ecd9bd;
+  --line:rgba(77,66,55,.13);
+  --bg:var(--off-white); --fg:var(--charcoal); --fg-soft:#8b7c6b; --card:#fffdf8;
+}
+/* Always render the warm theme, regardless of the device's dark-mode setting */
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth; scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));}
+body{background:var(--bg); color:var(--fg); font-family:'Inter',"Noto Serif JP",sans-serif; line-height:1.8; overflow-x:hidden;}
+.jp{font-family:'Noto Serif JP',serif;}
+.wrap{max-width:1100px; margin:0 auto; padding:0 28px;}
+section{padding:96px 0; border-bottom:1px solid var(--line);}
+@media(max-width:768px){section{padding:60px 0;}}
+
+nav{position:fixed; top:0; left:0; right:0; z-index:100;
+  padding:14px env(safe-area-inset-right,0) 14px env(safe-area-inset-left,0);
+  padding-top:calc(14px + env(safe-area-inset-top,0px));
+  background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line);}
+nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap;}
+.brand{font-weight:700; letter-spacing:.08em; font-size:.88rem;}
+.navlinks{display:flex; gap:20px; overflow-x:auto; scrollbar-width:none; min-width:0;}
+.navlinks::-webkit-scrollbar{display:none;}
+.navlinks a{font-size:.78rem; letter-spacing:.05em; color:var(--fg-soft); text-decoration:none; white-space:nowrap; transition:color .3s;}
+.navlinks a.active,.navlinks a:hover{color:var(--green);}
+@media(max-width:640px){
+  nav .wrap{flex-direction:column; align-items:flex-start; gap:6px;}
+}
+
+.hero{min-height:100svh; display:flex; flex-direction:column; justify-content:center; position:relative; padding:calc(120px + env(safe-area-inset-top,0px)) 0 60px;
+  background:radial-gradient(ellipse at 75% 15%, rgba(184,127,87,.16), transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(125,140,107,.13), transparent 55%);
+  border-bottom:1px solid var(--line);}
+.eyebrow{font-size:.82rem; letter-spacing:.16em; color:var(--fg-soft); margin-bottom:22px;}
+.hero h1{font-family:'Noto Serif JP',serif; font-weight:700; font-size:clamp(1.9rem,5.2vw,3.7rem); line-height:1.55; line-break:strict; overflow-wrap:break-word;}
+.hero h1 span{color:var(--earth);}
+.hero .sub{margin-top:28px; font-size:1rem; letter-spacing:.06em; color:var(--fg-soft);}
+.hero .msg{margin-top:14px; font-size:1.1rem; color:var(--fg-soft);}
+
+.label{font-size:.8rem; letter-spacing:.16em; color:var(--green); font-weight:600; margin-bottom:18px;}
+h2.title{font-family:'Noto Serif JP',serif; font-weight:700; font-size:clamp(1.5rem,3.6vw,2.4rem); line-height:1.5; margin-bottom:14px;}
+.section-sub{color:var(--fg-soft); font-size:1rem; margin-bottom:40px; max-width:640px;}
+p.body{max-width:620px; color:var(--fg-soft); font-size:1.02rem; margin-bottom:14px;}
+.src{font-size:.78rem; color:var(--fg-soft); margin-top:24px;}
+.src a{color:var(--green); text-decoration:none; border-bottom:1px dotted var(--green-soft);}
+
+/* Content is visible by default (no-JS safe). The fade-in only activates when JS adds .js to <html>. */
+.fade{transition:opacity .8s ease, transform .8s ease;}
+.js .fade{opacity:0; transform:translateY(22px);}
+.js .fade.in{opacity:1; transform:none;}
+
+.kw-list{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:32px;}
+.kw-list>div{border:1px solid var(--line); border-radius:10px; padding:18px 16px; background:var(--card);}
+.kw-word{display:block; font-family:'Noto Serif JP',serif; font-weight:700; font-size:1.05rem; color:var(--green); margin-bottom:8px;}
+.kw-desc{display:block; font-size:.86rem; color:var(--fg-soft); line-height:1.6;}
+@media(max-width:700px){.kw-list{grid-template-columns:repeat(2,1fr);}}
+
+.stepflow{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:28px 0;}
+.stepflow span{display:flex; align-items:center; gap:6px; font-size:.9rem; color:var(--fg); padding:7px 14px 7px 8px; background:var(--card); border:1px solid var(--line); border-radius:20px;}
+.stepflow span b{display:inline-flex; align-items:center; justify-content:center; width:18px; height:18px; border-radius:50%; background:var(--green); color:#fff; font-size:.68rem; font-weight:700;}
+.stepflow i{color:var(--earth); font-style:normal; font-size:.9rem;}
+
+.stage-tag{display:inline-block; padding:5px 14px; border:1px solid var(--green-soft); color:var(--green); border-radius:20px; font-size:.8rem; letter-spacing:.08em; margin-bottom:20px;}
+
+.two-col{display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:36px;}
+@media(max-width:700px){.two-col{grid-template-columns:1fr;}}
+.col-box{border:1px solid var(--line); border-radius:10px; padding:26px; background:var(--card);}
+.col-box h4{font-size:.86rem; letter-spacing:.1em; color:var(--green); margin-bottom:14px;}
+.col-box ul{list-style:none; color:var(--fg-soft); font-size:.95rem;}
+.col-box ul li{padding:5px 0; border-bottom:1px dashed var(--line);}
+.col-box ul li:last-child{border-bottom:none;}
+
+.flow{display:flex; flex-wrap:wrap; align-items:center; gap:7px; justify-content:flex-start; margin-top:22px;}
+.flow span{font-size:.9rem; color:var(--fg); padding:6px 12px; background:var(--card); border:1px solid var(--line); border-radius:20px;}
+.flow i{color:var(--earth); font-style:normal;}
+
+.lang-row{display:flex; flex-wrap:wrap; gap:10px; margin:26px 0;}
+.lang-row span{font-size:.86rem; padding:7px 14px; border:1px solid var(--line); border-radius:20px; color:var(--fg-soft);}
+
+.loop-track{display:flex; overflow-x:auto; padding:8px 4px 16px; margin-top:36px; scroll-snap-type:x proximity; -webkit-overflow-scrolling:touch;}
+.loop-card{flex:0 0 150px; scroll-snap-align:start; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 16px; margin-right:26px; position:relative; transition:transform .25s, border-color .25s;}
+.loop-card:hover{transform:translateY(-3px); border-color:var(--green-soft);}
+.loop-card .n{font-family:'Noto Serif JP',serif; font-weight:700; color:var(--earth); font-size:1.3rem;}
+.loop-card .en{display:block; font-size:.82rem; font-weight:700; letter-spacing:.05em; color:var(--green); margin:10px 0 5px;}
+.loop-card .jp2{display:block; font-size:.84rem; color:var(--fg-soft); line-height:1.5;}
+.loop-card:not(:last-child)::after{content:'→'; position:absolute; top:50%; right:-22px; transform:translateY(-50%); color:var(--earth); font-size:1rem;}
+.loop-close{display:flex; align-items:center; gap:14px; margin-top:8px; padding:18px 22px; border:1px dashed var(--green-soft); border-radius:10px; color:var(--green); background:var(--card);}
+.loop-close .icon{font-size:1.4rem; flex-shrink:0;}
+.loop-close p{font-size:.92rem; color:var(--fg-soft); margin:0; max-width:none;}
+
+/* beyond agriculture */
+.beyond-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:32px;}
+@media(max-width:800px){.beyond-grid{grid-template-columns:1fr;}}
+.beyond-card{border:1px solid var(--line); border-radius:10px; padding:24px 22px; background:var(--card);}
+.beyond-card .en{display:block; font-size:.78rem; letter-spacing:.14em; color:var(--earth); font-weight:700; margin-bottom:6px;}
+.beyond-card h3{font-family:'Noto Serif JP',serif; font-size:1.12rem; margin-bottom:10px;}
+.beyond-card p{font-size:.9rem; color:var(--fg-soft); line-height:1.7;}
+
+/* master timeline */
+.timeline{position:relative; margin-top:36px; padding-left:20px; border-left:2px solid var(--line);}
+.tl-item{position:relative; padding:0 0 26px 30px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{content:''; position:absolute; left:-37px; top:4px; width:12px; height:12px; border-radius:50%; background:var(--green); border:3px solid var(--bg); box-shadow:0 0 0 2px var(--green);}
+.tl-period{font-family:'Noto Serif JP',serif; font-weight:700; font-size:1.3rem; color:var(--green);}
+.tl-name{font-size:.85rem; letter-spacing:.1em; color:var(--fg-soft); margin-bottom:8px;}
+.tl-item h3{font-size:1.08rem; margin:4px 0 8px; font-weight:600;}
+.tl-item .note{font-size:.95rem; color:var(--fg-soft);}
+
+.roles{display:grid; grid-template-columns:repeat(5,1fr); gap:18px; margin-top:36px;}
+.role-item .num{font-family:'Noto Serif JP',serif; font-size:2rem; font-weight:700; color:var(--earth);}
+.role-item h3{margin:8px 0 6px; font-size:1rem;}
+.role-item p{color:var(--fg-soft); font-size:.9rem;}
+@media(max-width:900px){.roles{grid-template-columns:repeat(2,1fr);}}
+
+.longterm{display:flex; gap:38px; flex-wrap:wrap; margin-top:26px;}
+.lt-item .num{font-family:'Noto Serif JP',serif; font-size:2.3rem; font-weight:700; color:var(--green);}
+.lt-item p{color:var(--fg-soft); margin-top:6px; max-width:220px; font-size:.95rem;}
+.final .lt-item .num{color:var(--earth-light);}
+.final .lt-item p{color:#d9c9b4;}
+
+.final{display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background:var(--black); color:var(--off-white); border-bottom:none; padding:56px 24px 60px;}
+.final h2{font-family:'Noto Serif JP',serif; font-size:clamp(1.5rem,4vw,2.3rem); font-weight:700; margin-bottom:12px;}
+.final .tag{letter-spacing:.1em; color:#d9c9b4; margin-bottom:24px; font-size:.9rem;}
+.final .steps{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; font-size:.84rem; letter-spacing:.05em; color:#c4b49c; margin-bottom:28px;}
+.final .name{font-family:'Noto Serif JP',serif; font-size:1.15rem; font-weight:700;}
+.final .role{color:#c4b49c; font-size:.88rem; margin-top:6px;}
+.final .msg{max-width:560px; color:#efe6d6; font-size:.95rem; margin-bottom:22px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">KOBASHI <span style="color:var(--fg-soft); font-weight:400;">GLOBAL</span></div>
+    <div class="navlinks" id="navlinks">
+      <a href="#learn">LEARN</a><a href="#design">DESIGN</a><a href="#digital">DIGITAL</a>
+      <a href="#testbuild">TEST/BUILD</a><a href="#loop">LOOP</a><a href="#scale">SCALE</a>
+      <a href="#beyond">BEYOND</a><a href="#role">ROLE</a><a href="#vision">VISION</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">KOBASHI HOLDINGS — GLOBAL BUSINESS DEVELOPMENT</div>
+    <h1 class="jp">日本の技術を、<br>世界の現場で使われる<span>事業</span>へ。</h1>
+    <div class="sub">LEARN → DESIGN → DIGITALIZE → TEST → BUILD → SCALE → AUTONOMIZE</div>
+    <div class="msg jp">海外事業を、"販売"から"事業"へ。そして「地球を耕す」の舞台を、世界へ。</div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap fade">
+    <div class="label">WHY ME / WHY KOBASHI</div>
+    <h2 class="title jp">4つの視点を、KOBASHIに重ねる。</h2>
+    <p class="body jp">これまで欧州・中国・北米・東南アジアで、海外営業、新規市場開拓、代理店との折衝、拠点立ち上げ、現地チーム構築に携わってきました。2023年頃からは自ら農業にも取り組み、現場を経験しています。だからこそ、まずKOBASHIという会社を理解することから始めたいと考えています。海外事業を育てるには、この4つの視点を重ねて考える必要があると考えています。</p>
+    <div class="kw-list">
+      <div><span class="kw-word jp">JAPAN</span><span class="kw-desc jp">日本のものづくりが持つ品質と信頼</span></div>
+      <div><span class="kw-word jp">GLOBAL</span><span class="kw-desc jp">海外営業・拠点立ち上げで得た現地理解</span></div>
+      <div><span class="kw-word jp">AGRICULTURE</span><span class="kw-desc jp">自ら農業に取り組んだ現場感覚</span></div>
+      <div><span class="kw-word jp">TECHNOLOGY</span><span class="kw-desc jp">現場で実際に機能する製品・技術</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="learn">
+  <div class="wrap fade">
+    <div class="stage-tag">0–3 MONTHS</div>
+    <div class="label">STEP 01 — LEARN</div>
+    <h2 class="title jp">まず、KOBASHIを知る。</h2>
+    <p class="section-sub jp">この期間は「変える」ことより「理解する」ことを優先します。</p>
+    <div class="two-col">
+      <div class="col-box"><h4>理解する対象</h4><ul>
+        <li>製品・技術・製造現場</li><li>製品ごとの強み</li><li>既存海外市場・既存代理店</li><li>顧客・競合</li>
+      </ul></div>
+      <div class="col-box"><h4>社内の理解</h4><ul>
+        <li>営業</li><li>開発</li><li>製造</li><li>システム</li><li>社内の意思決定プロセス</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap fade">
+    <div class="stage-tag">3 MONTHS+</div>
+    <div class="label">STEP 02 — DESIGN</div>
+    <h2 class="title jp">理解した情報を、少しずつ戦略と施策へ。</h2>
+    <p class="body jp">最初から大規模な海外展開は目指しません。どの国で、どの製品を、誰に、どんな価値として、どの販売方法で売るのかを、小さく検証しながら考えます。</p>
+    <p class="body jp" style="margin-top:26px; font-size:.9rem; color:var(--fg-soft);">検討する順番</p>
+    <div class="stepflow">
+      <span><b>1</b>Market</span><i>→</i><span><b>2</b>Product</span><i>→</i><span><b>3</b>Customer</span><i>→</i><span><b>4</b>Distributor</span><i>→</i><span><b>5</b>Value Proposition</span><i>→</i><span><b>6</b>Sales Method</span>
+    </div>
+    <p class="body jp" style="margin-top:16px; font-size:.9rem; color:var(--fg-soft);">検証のサイクル</p>
+    <div class="stepflow">
+      <span><b>1</b>Hypothesis</span><i>→</i><span><b>2</b>Execute</span><i>→</i><span><b>3</b>Measure</span><i>→</i><span><b>4</b>Improve</span>
+    </div>
+  </div>
+</section>
+
+<section id="digital">
+  <div class="wrap fade">
+    <div class="stage-tag">3 MONTHS+</div>
+    <div class="label">STEP 03 — DIGITALIZE</div>
+    <h2 class="title jp">世界からKOBASHIへ、接点を増やす。</h2>
+    <p class="body jp">Webサイトをつくること自体が目的ではありません。目的は、世界中の潜在顧客・代理店・パートナーとの接点を増やすことです。</p>
+    <div class="flow">
+      <span>KOBASHI WEBSITE</span><i>→</i><span>LOCALIZED LP</span><i>→</i><span>PRODUCT INFO</span><i>→</i><span>USE CASE</span><i>→</i><span>INQUIRY</span><i>→</i><span>WEB MEETING</span><i>→</i><span>DEMO</span><i>→</i><span>FIELD TRIAL</span><i>→</i><span>DISTRIBUTOR</span><i>→</i><span>SALES</span>
+    </div>
+    <p class="body jp" style="margin-top:26px;">単純な翻訳ではなく、その国の人がその国の感覚で理解できるサイトを目指します。ターゲット市場に応じて段階的に展開します。</p>
+    <div class="lang-row"><span>English</span><span>Vietnamese</span><span>Thai</span><span>Indonesian</span><span>Chinese</span></div>
+    <div class="col-box" style="margin-top:10px;">
+      <h4>システム部門との協業</h4>
+      <p class="jp" style="color:var(--fg-soft); font-size:.98rem;">自分自身がエンジニアとして開発するのではなく、営業目線から海外顧客が何を知りたいのか、どの情報をどう見せれば問い合わせ・商談につながるのかを定義し、システム担当と共同で情報設計・CTA・問い合わせ導線を設計する役割です。「システムを作る」のではなく、「営業とシステムをつなぎ、売れるデジタル導線をつくる」立場です。</p>
+    </div>
+  </div>
+</section>
+
+<section id="testbuild">
+  <div class="wrap fade">
+    <div class="stage-tag">1–3 YEARS</div>
+    <div class="label">STEP 04 — TEST / BUILD</div>
+    <h2 class="title jp">小さく実証し、売れる仕組みをつくる。</h2>
+    <p class="body jp">Webで問い合わせを集めて終わらせず、次の流れをつくります。</p>
+    <div class="flow">
+      <span>Inquiry</span><i>→</i><span>Web Meeting</span><i>→</i><span>Distributor Candidate</span><i>→</i><span>Demo</span><i>→</i><span>Field Trial</span><i>→</i><span>Sales</span>
+    </div>
+    <div class="two-col">
+      <div class="col-box"><h4>FIELD TRIALで確認すること</h4><ul>
+        <li>作業時間</li><li>作業面積・作業速度</li><li>燃料</li><li>導入コスト</li><li>生産性</li>
+      </ul></div>
+      <div class="col-box"><h4>再現可能な販売モデルへ</h4><ul>
+        <li>販売方法</li><li>代理店教育</li><li>導入支援・アフターサービス</li><li>部品供給</li><li>KPI・顧客データ</li>
+      </ul></div>
+    </div>
+    <p class="body jp" style="margin-top:24px;">「売れた」ではなく、「なぜ売れたのか」を理解する。</p>
+  </div>
+</section>
+
+<section id="loop">
+  <div class="wrap fade">
+    <div class="label">GLOBAL BUSINESS LOOP</div>
+    <h2 class="title jp">売るのではなく、循環をつくる。</h2>
+    <p class="section-sub jp">顧客の声がKOBASHIに戻り、製品・サービスが進化し、その結果が次の市場につながる循環として海外事業を捉えます。</p>
+    <div class="loop-track">
+      <div class="loop-card"><span class="n jp">01</span><span class="en">MARKET</span><span class="jp2 jp">市場を見る</span></div>
+      <div class="loop-card"><span class="n jp">02</span><span class="en">DISCOVER</span><span class="jp2 jp">需要を見つける</span></div>
+      <div class="loop-card"><span class="n jp">03</span><span class="en">DEMO</span><span class="jp2 jp">実際に見せる</span></div>
+      <div class="loop-card"><span class="n jp">04</span><span class="en">FIELD TRIAL</span><span class="jp2 jp">現場で試す</span></div>
+      <div class="loop-card"><span class="n jp">05</span><span class="en">SALES</span><span class="jp2 jp">販売する</span></div>
+      <div class="loop-card"><span class="n jp">06</span><span class="en">DELIVERY</span><span class="jp2 jp">届ける</span></div>
+      <div class="loop-card"><span class="n jp">07</span><span class="en">SERVICE</span><span class="jp2 jp">使い続けてもらう</span></div>
+      <div class="loop-card"><span class="n jp">08</span><span class="en">CUSTOMER DATA</span><span class="jp2 jp">声を集める</span></div>
+      <div class="loop-card"><span class="n jp">09</span><span class="en">PRODUCT</span><span class="jp2 jp">製品を進化させる</span></div>
+      <div class="loop-card"><span class="n jp">10</span><span class="en">NEXT MARKET</span><span class="jp2 jp">次の市場へ</span></div>
+    </div>
+    <div class="loop-close">
+      <span class="icon">↺</span>
+      <p class="jp">NEXT MARKETから、また MARKET へ。売って終わらない循環が、ここから次の市場へとつながっていきます。</p>
+    </div>
+  </div>
+</section>
+
+<section id="scale">
+  <div class="wrap fade">
+    <div class="stage-tag">3–5 YEARS</div>
+    <div class="label">STEP 05 — SCALE</div>
+    <h2 class="title jp">成功モデルを、複数市場へ横展開する。</h2>
+    <p class="body jp">複数市場を束ねるのではなく、一つの市場で作った成功モデルを、複数の市場へ横展開する考え方です。</p>
+    <div class="stepflow">
+      <span><b>✓</b>Country A（成功モデル）</span><i>→</i><span>Country B</span><i>→</i><span>Country C</span><i>→</i><span>Country D</span>
+    </div>
+    <div class="two-col">
+      <div class="col-box"><h4>共通化するもの</h4><ul>
+        <li>営業プロセス</li><li>LPの基本構造・製品説明</li><li>Demo方法</li><li>KPI・代理店教育</li><li>Service Model / Customer Feedback</li>
+      </ul></div>
+      <div class="col-box"><h4>現地化するもの</h4><ul>
+        <li>言語</li><li>農業環境・土壌・作物</li><li>トラクター・機材条件</li><li>商習慣・代理店</li><li>価格・規制</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap fade">
+    <div class="stage-tag">5–10 YEARS</div>
+    <div class="label">STEP 06 — GLOBAL EXPANSION</div>
+    <h2 class="title jp">さらに多くの市場へ。</h2>
+    <p class="body jp">目的は国数を増やすことではありません。Market・Product・Distributor・Service・Digital・Dataというモデルを、異なる市場に適応させていきます。</p>
+    <div class="flow">
+      <span>Customer</span><i>→</i><span>Distributor</span><i>→</i><span>KOBASHI</span><i>→</i><span>Development</span><i>→</i><span>New Product</span><i>→</i><span>New Market</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap fade">
+    <div class="stage-tag">10+ YEARS</div>
+    <div class="label">STEP 07 — AUTONOMIZE</div>
+    <h2 class="title jp">各国が、自ら事業を動かせる状態へ。</h2>
+    <p class="body jp">この段階では、自分自身がすべての国を細かく管理することを目標にしません。目指すのは、特定の一人に依存せず、各国が自律的に判断しながら成長し続けられる強い事業体制です。</p>
+    <p class="body jp" style="margin-top:26px; font-size:.9rem; color:var(--fg-soft);">各国に整える仕組み</p>
+    <div class="flow">
+      <span>Distributor</span><span>Sales</span><span>Service</span><span>Parts</span><span>Marketing</span><span>Customer Data / KPI</span>
+    </div>
+    <p class="body jp" style="margin-top:22px;">日本からすべてを細かく指示するのではなく、各国が自律的に判断し、KOBASHIと連携しながら成長できる状態を目指します。</p>
+  </div>
+</section>
+
+<section id="role">
+  <div class="wrap fade">
+    <div class="label">MY ROLE</div>
+    <h2 class="title jp">私が担いたい役割。</h2>
+    <div class="roles">
+      <div class="role-item"><div class="num">01</div><h3 class="jp">PLAYER</h3><p class="jp">まず自分が現場に入る。</p></div>
+      <div class="role-item"><div class="num">02</div><h3 class="jp">BUILDER</h3><p class="jp">売れる仕組みをつくる。</p></div>
+      <div class="role-item"><div class="num">03</div><h3 class="jp">EXPANDER</h3><p class="jp">成功モデルを複数市場へ展開する。</p></div>
+      <div class="role-item"><div class="num">04</div><h3 class="jp">LEADER</h3><p class="jp">人と仕組みを育てる。</p></div>
+      <div class="role-item"><div class="num">05</div><h3 class="jp">ARCHITECT</h3><p class="jp">特定の個人に依存しない、強い事業をつくる。</p></div>
+    </div>
+    <p class="body jp" style="margin-top:32px;">まずは製品・現場・進捗を理解し、仕組みをつくり、人を育てていく。特定の個人の力に頼らずに各国の事業所が成長し続けられるシステムをつくることが、海外事業を長期で強くしていくことだと考えています。</p>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap fade">
+    <div class="label">BEYOND AGRICULTURE</div>
+    <h2 class="title jp">農業機械の先へ。「地球を耕す」の舞台を広げる。</h2>
+    <p class="body jp">KOBASHIグループは「地球を耕す」という理念のもと、農業にとどまらず、<strong>食糧・エネルギー・環境</strong>という地球規模の課題解決に取り組んでいます。1910年創業当時の社会課題が食糧不足であったように、社会課題は時代とともに変わり、KOBASHIはその都度、モノづくりの力で応え続けてきた会社です。</p>
+    <p class="body jp">海外事業も、農業機械でつくった市場・代理店・顧客基盤を<strong>起点</strong>に、グループ全体の挑戦を世界の現場へつなぐ役割を担えると考えています。まずは農業機械の中核事業で海外の成功モデルをつくり、その基盤の上で、次の領域へ舞台を広げていく。10年後を見据えた事業展開のイメージです。</p>
+    <div class="beyond-grid">
+      <div class="beyond-card">
+        <span class="en">FOOD / 食糧</span>
+        <h3 class="jp">植物工場・次世代農業の世界展開</h3>
+        <p class="jp">植物工場の機械化による食の安定供給（ファームシップとの共創）や、次世代植物工場を持つプランテックスとの資本業務提携など、食糧課題への挑戦はすでに始まっています。農業機械で築いた海外 network は、この領域を世界へ出すときの足場になると考えています。</p>
+      </div>
+      <div class="beyond-card">
+        <span class="en">ENERGY / エネルギー</span>
+        <h3 class="jp">バイオ燃料・再生エネルギー領域への接続</h3>
+        <p class="jp">耕作放置地を活用したミドリムシ培養とバイオ燃料の商用化（ユーグレナとの共創）、太陽光パネル清掃のロボット化（未来機械との共創）など、農地とエネルギーをつなぐ挑戦が進んでいます。海外の農業市場は、エネルギー事業の新たな現場にもなり得ます。</p>
+      </div>
+      <div class="beyond-card">
+        <span class="en">ENVIRONMENT / 環境</span>
+        <h3 class="jp">持続可能性を、事業の前提に。</h3>
+        <p class="jp">岡山本社の使用電力を100%再生可能エネルギーへ切り替えるなど、グループは持続可能な経営基盤を内側からつくっています。さらにKOBASHI ROBOTICSでは、社会課題解決に挑むスタートアップへの「伴走型包括的モノづくり支援」を行っており、環境領域の新しい事業の芽が社内に蓄積されています。</p>
+      </div>
+    </div>
+    <p class="src jp">出典: <a href="https://www.kobashiholdings.com/" target="_blank" rel="noopener">KOBASHI HOLDINGS 公式サイト</a>／<a href="https://www.kobashiholdings.com/2020/03/03/51/" target="_blank" rel="noopener">「地球を耕す」ビジョンオフィス開設のお知らせ</a>／<a href="https://www.kobashiindustries.com/2026/04/15/4047/" target="_blank" rel="noopener">小橋工業×プランテックス 資本業務提携</a>／<a href="https://www.kobashiholdings.com/sustainability/environment/" target="_blank" rel="noopener">環境への取り組み</a></p>
+  </div>
+</section>
+
+<section style="padding-bottom:48px;">
+  <div class="wrap fade">
+    <div class="label">FINAL ROADMAP</div>
+    <h2 class="title jp">KOBASHIを理解する → 世界で自律する。</h2>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-period">0–3</div><div class="tl-name">MONTHS — LEARN</div><h3 class="jp">KOBASHIを知る</h3></div>
+      <div class="tl-item"><div class="tl-period">3+</div><div class="tl-name">MONTHS — DESIGN</div><h3 class="jp">戦略・施策をつくる</h3></div>
+      <div class="tl-item"><div class="tl-period">3+</div><div class="tl-name">MONTHS — DIGITALIZE</div><h3 class="jp">海外との接点を増やす</h3></div>
+      <div class="tl-item"><div class="tl-period">1–3</div><div class="tl-name">YEARS — TEST / BUILD</div><h3 class="jp">実証・販売モデル構築</h3></div>
+      <div class="tl-item"><div class="tl-period">3–5</div><div class="tl-name">YEARS — SCALE</div><h3 class="jp">複数市場へ横展開</h3></div>
+      <div class="tl-item"><div class="tl-period">5–10</div><div class="tl-name">YEARS — GLOBAL EXPANSION</div><h3 class="jp">さらに多くの市場へ</h3></div>
+      <div class="tl-item"><div class="tl-period">10+</div><div class="tl-name">YEARS — AUTONOMIZE / BEYOND</div><h3 class="jp">各国が自律的に運営し、「地球を耕す」の舞台を広げる</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="final">
+  <h2 class="jp">「地球を耕す」を、世界の現場へ。</h2>
+  <div class="tag">KOBASHI × GLOBAL × AGRICULTURE</div>
+  <p class="msg jp">KOBASHIが掲げる「地球を耕す」という理念は、農業にとどまらないものだと理解しています。まずは農業機械という中核事業で海外に事業基盤をつくり、将来的には食糧・エネルギー・環境——この理念を体現する事業を世界の現場へ広げていく。そこまでを見据えた海外事業開発にしたいと考えています。</p>
+  <div class="longterm" style="justify-content:center;">
+    <div class="lt-item"><div class="num">5</div><p class="jp">YEARS — 成功モデルをつくる。</p></div>
+    <div class="lt-item"><div class="num">10</div><p class="jp">YEARS — 成功モデルを複数市場へ展開する。</p></div>
+    <div class="lt-item"><div class="num">10+</div><p class="jp">YEARS — 各国が自律的に成長できる仕組みを残す。</p></div>
+  </div>
+  <div class="steps" style="margin-top:26px;"><span>LEARN</span><span>DESIGN</span><span>DIGITALIZE</span><span>TEST</span><span>BUILD</span><span>SCALE</span><span>AUTONOMIZE</span></div>
+  <div class="name">Takehiro Muraoka</div>
+  <div class="role">Global Business Development</div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  document.documentElement.classList.add('js');
+  var fades = document.querySelectorAll('.fade');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, {threshold:.12});
+  fades.forEach(function(f){ io.observe(f); });
+
+  var navLinks = document.querySelectorAll('#navlinks a');
+  var sections = Array.from(navLinks).map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  var navIo = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      var link = document.querySelector('#navlinks a[href="#'+entry.target.id+'"]');
+      if(!link) return;
+      if(entry.isIntersecting){ navLinks.forEach(function(l){l.classList.remove('active');}); link.classList.add('active'); }
+    });
+  }, {rootMargin:'-45% 0px -45% 0px'});
+  sections.forEach(function(s){ navIo.observe(s); });
+});
+</script>
+</body>
+</html>
