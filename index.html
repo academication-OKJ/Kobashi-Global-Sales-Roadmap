@@ -178,10 +178,21 @@ nav .wrap{
    HERO
 ========================================================= */
 
-HERO
-========================================================= */
+.hero{
+  position:relative;
 
- background:
+  min-height:100svh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  padding:
+    calc(120px + env(safe-area-inset-top, 0px))
+    6vw
+    72px;
+
+  background:
     radial-gradient(
       ellipse at 75% 15%,
       rgba(184,127,87,.16),
@@ -196,53 +207,124 @@ HERO
   border-bottom:1px solid var(--line);
 }
 
+
+/* 小さな英字ラベル */
 .eyebrow{
+  margin:0 0 16px;
+
+  font-family:"Inter",sans-serif;
   font-size:.78rem;
+  font-weight:500;
   letter-spacing:.16em;
+
   color:var(--fg-soft);
-  margin-bottom:16px;
 }
 
+
+/* メインコピー */
 .hero h1{
+  margin:0;
+
+  max-width:1000px;
+
   font-family:"Noto Serif JP",serif;
   font-weight:700;
 
-  font-size:
-    clamp(
-      1.9rem,
-      5.2vw,
-      3.7rem
-    );
+  font-size:clamp(
+    2rem,
+    5.2vw,
+    3.7rem
+  );
 
   line-height:1.45;
+  letter-spacing:.02em;
+
   line-break:strict;
   overflow-wrap:break-word;
-
-  /* 下の要素との距離を明確に */
-  margin:0;
 }
 
+
+/* 強調文字 */
 .hero h1 span{
   color:var(--earth);
 }
 
+
+/* 英語サブコピー */
 .hero .sub{
-  margin-top:20px;
+  margin:22px 0 0;
 
   font-family:"Inter",sans-serif;
-
   font-size:.95rem;
+  line-height:1.6;
   letter-spacing:.06em;
+
   color:var(--fg-soft);
 }
 
+
+/* 日本語メッセージ */
 .hero .msg{
-  margin-top:10px;
+  max-width:760px;
+
+  margin:12px 0 0;
+
   font-size:1rem;
-  line-height:1.8;
+  line-height:1.9;
+
   color:var(--fg-soft);
 }
 
+
+/* =========================================================
+   HERO — MOBILE
+========================================================= */
+
+@media (max-width:700px){
+
+  .hero{
+    min-height:100svh;
+
+    padding:
+      calc(100px + env(safe-area-inset-top, 0px))
+      22px
+      56px;
+  }
+
+  .eyebrow{
+    margin-bottom:14px;
+    font-size:.7rem;
+    letter-spacing:.14em;
+  }
+
+  .hero h1{
+    max-width:none;
+
+    font-size:clamp(
+      1.85rem,
+      8vw,
+      2.5rem
+    );
+
+    line-height:1.55;
+    letter-spacing:.01em;
+  }
+
+  .hero .sub{
+    margin-top:18px;
+
+    font-size:.82rem;
+    line-height:1.7;
+    letter-spacing:.04em;
+  }
+
+  .hero .msg{
+    margin-top:10px;
+
+    font-size:.92rem;
+    line-height:1.85;
+  }
+}
 
 /* =========================================================
    COMMON
