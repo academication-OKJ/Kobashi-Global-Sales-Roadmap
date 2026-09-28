@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KOBASHI 極 KIWAMI｜高耐摩耗耕うん爪</title>
+<meta name="description" content="KOBASHIの高耐摩耗耕うん爪「極 KIWAMI」。爪の価格だけでなく、交換回数・交換時間まで含めた「1年間の負担」を、自分の数字で確認できます。">
+<style>
+:root{--bg:#faf7f0;--sand:#f1ebdc;--sage:#e3ebdb;--sd:#4f6f4c;--ac:#a5603b;--ink:#39372f;--mu:#6b675b;--ln:#e4ddcb;--w:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:18px/1.9 "Hiragino Sans","Noto Sans JP","Yu Gothic",system-ui,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:88px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}section{padding:72px 0}.alt{background:var(--sand)}.sg{background:var(--sage)}
+h1,h2,h3{font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;line-height:1.4;margin:0 0 .6em;font-weight:600}
+h1{font-size:clamp(2rem,7vw,3.7rem)}h2{font-size:clamp(1.6rem,5vw,2.4rem)}h3{font-size:1.25rem}
+.kick{font:700 .85rem/1 Georgia,serif;letter-spacing:.2em;color:var(--ac);margin:0 0 12px}
+.lead{font-family:"Hiragino Mincho ProN","Yu Mincho",Georgia,serif;font-size:clamp(1.15rem,3.5vw,1.4rem)}
+.pl{white-space:pre-line}.mu{color:var(--mu)}
+.note{font-size:.95rem;color:var(--mu);background:rgba(79,111,76,.08);border-radius:14px;padding:10px 14px;margin:14px 0}
+header{position:sticky;top:0;z-index:9;background:rgba(250,247,240,.93);backdrop-filter:blur(6px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-family:Georgia,serif;font-weight:700;letter-spacing:.2em;color:var(--sd)}
+.lang{display:flex;border:1px solid var(--sd);border-radius:999px;overflow:hidden}.lang button{background:none;border:0;color:var(--sd);padding:8px 14px;min-height:40px;cursor:pointer;font:inherit;font-weight:700}
+.lang button[aria-pressed=true]{background:var(--sd);color:#fff}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:60px;padding:14px 28px;background:var(--sd);color:#fff;font-weight:700;font-size:1.1rem;border:2px solid var(--sd);border-radius:16px;text-decoration:none;cursor:pointer;font-family:inherit;margin:10px 0;box-shadow:0 4px 0 #35503a}
+.btn::after{content:"›";font-size:1.5rem;line-height:1}
+.btn.o{background:var(--w);color:var(--sd);box-shadow:none}.btn:hover{filter:brightness(1.06)}
+.btns{display:grid;gap:4px;max-width:440px}
+.hero{background:radial-gradient(circle at 90% 10%,#dfe8d3 0 170px,transparent 171px),linear-gradient(180deg,#eee9d6,var(--bg));padding:80px 0 64px}
+.card{background:var(--w);border:1px solid var(--ln);border-radius:22px;padding:24px;box-shadow:0 8px 24px rgba(90,80,50,.06)}
+.grid{display:grid;gap:16px}.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chip{min-height:54px;padding:8px 18px;border:2px solid var(--ln);border-radius:14px;background:var(--w);font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--sd);border-color:var(--sd);color:#fff}
+label{display:block;font-weight:700;margin:16px 0 6px}
+input,select{width:100%;min-height:54px;padding:10px 14px;border:2px solid var(--ln);border-radius:14px;background:var(--w);font:inherit;font-size:1.1rem;color:var(--ink)}
+input.bad{border-color:#b00020}
+fieldset{border:0;background:var(--w);border-radius:22px;margin:0 0 16px;padding:8px 22px 22px;box-shadow:0 8px 24px rgba(90,80,50,.06)}
+legend{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-weight:700;font-size:1.2rem;padding:0 8px;color:var(--sd)}
+details{margin:14px 0}summary{cursor:pointer;font-weight:700;padding:12px 16px;background:var(--w);border:2px solid var(--sd);border-radius:14px;color:var(--sd)}
+.ba{display:grid;gap:8px;align-items:center;margin:20px 0}
+@media(min-width:760px){.ba{grid-template-columns:1fr 56px 1fr}.arr{transform:rotate(-90deg)}}
+.arr{text-align:center;font-size:1.6rem;color:var(--sd)}
+.big{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px dashed var(--ln)}
+.big span{font-size:.95rem;color:var(--mu)}.big b{font-family:Georgia,serif;font-size:clamp(1.7rem,6vw,2.3rem);color:var(--ink);text-align:right}
+.after{background:var(--sage);border-color:#c9d6bd}.after ul{padding-left:1.2em;margin:8px 0}
+.tag{display:inline-block;background:var(--sd);color:#fff;border-radius:999px;padding:2px 14px;font-size:.9rem;font-weight:700;margin-bottom:8px}
+.res{margin:14px 0;padding:16px;background:var(--w);border-left:5px solid var(--ac);border-radius:12px;font-weight:700}
+.stg{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}.stg div{background:var(--w);border-radius:16px;padding:10px 4px;font-weight:700;font-size:.95rem}
+.lay{border-radius:18px;overflow:hidden;max-width:440px}.lay div{padding:14px;font-weight:700;color:#fff;font-size:.95rem}
+.bar{margin:12px 0}.bar p{margin:0 0 4px;font-weight:700}.track{height:36px;background:#e8e2d1;border-radius:10px;overflow:hidden}.track i{display:block;height:100%;padding:5px 10px;font-style:normal;color:#fff;font-weight:700;min-width:56px}
+.st b{display:block;font:700 1.9rem/1.3 Georgia,serif;color:var(--ac)}.st{text-align:center}
+.pills{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none}.pills li{background:var(--w);border:1px solid var(--ln);border-radius:999px;padding:6px 16px}
+.ckg{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.ckg label{display:flex;gap:12px;align-items:center;background:var(--w);border:2px solid var(--ln);border-radius:16px;padding:14px;margin:0;font-weight:500;cursor:pointer}
+.ckg input{width:26px;min-height:26px;accent-color:var(--sd)}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:10px}.steps li{counter-increment:s;background:var(--w);border-radius:16px;padding:14px 16px 14px 60px;position:relative;font-weight:700}
+.steps li::before{content:counter(s);position:absolute;left:14px;top:12px;width:34px;height:34px;border-radius:50%;background:var(--ac);color:#fff;text-align:center;line-height:34px}
+footer{background:#e9e2cf;padding:36px 0;font-size:.92rem;color:var(--mu)}footer li{margin:6px 0}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:8;display:flex;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px));background:rgba(250,247,240,.96);border-top:1px solid var(--ln)}
+.sticky .btn{flex:1;margin:0;min-height:52px;padding:8px 10px;font-size:1rem}.hide{display:none}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span class="logo">KOBASHI</span>
+<div class="lang" role="group" aria-label="Language"><button data-l="ja">日本語</button><button data-l="en">EN</button><button data-l="vi">VI</button></div></div></header>
+<main>
+<section class="hero"><div class="wrap">
+<p class="kick" data-i="brand"></p>
+<h1 class="pl" data-i="h1"></h1>
+<p class="lead pl" data-i="sub" style="max-width:34em"></p>
+<div class="btns"><a class="btn" href="#sim" data-i="cta1"></a><a class="btn o" href="#kiwami" data-i="cta2"></a></div>
+</div></section>
+
+<section id="sim"><div class="wrap">
+<p class="kick">01</p><h2 data-i="sim_h"></h2><p class="mu" data-i="sim_p"></p>
+<fieldset><legend data-i="q1"></legend><div class="chips" id="c_type"></div></fieldset>
+<fieldset><legend data-i="q2"></legend><div class="chips" id="c_cnt"></div><label for="cnt" data-i="own_c"></label><input id="cnt" type="number" inputmode="decimal" min="0" step="any"></fieldset>
+<fieldset><legend data-i="q3"></legend><div class="chips" id="c_mn"></div><label for="mn" data-i="own_m"></label><input id="mn" type="number" inputmode="decimal" min="0" step="any"><p class="note" data-i="min_n"></p></fieldset>
+<details><summary data-i="opt_h"></summary>
+<fieldset><label for="pc" data-i="p_cur"></label><input id="pc" type="number" inputmode="numeric" min="0" step="any">
+<label for="pk" data-i="p_kiw"></label><input id="pk" type="number" inputmode="numeric" min="0" step="any">
+<label for="kc" data-i="k_cnt"></label><input id="kc" type="number" inputmode="decimal" min="0" step="any">
+<label for="rate" data-i="rate"></label><input id="rate" type="number" inputmode="numeric" min="0" step="any">
+<p class="note" data-i="opt_n"></p></fieldset></details>
+<h3 data-i="res_h" style="margin-top:32px"></h3>
+<div class="ba" id="ba" aria-live="polite"></div>
+<div class="grid g2" id="extra"></div>
+<p class="lead" id="rq"></p>
+<p class="note" data-i="ref_n"></p>
+<button class="chip" id="reset" type="button" data-i="reset"></button>
+<p class="note" data-i="local"></p>
+</div></section>
+
+<section class="alt" id="wear"><div class="wrap">
+<p class="kick">02</p><h2 data-i="time_msg" class="pl"></h2>
+<h3 data-i="wear_h" style="margin-top:32px"></h3><div class="stg" id="stg"></div>
+<h3 data-i="each_h" style="margin-top:28px"></h3><ul class="pills" id="each"></ul>
+<p class="lead" data-i="wear_msg"></p>
+</div></section>
+
+<section id="kiwami"><div class="wrap">
+<p class="kick">03</p><h2 data-i="kw_h"></h2><p data-i="kw_p"></p>
+<div class="grid g2" style="align-items:center">
+<div><div class="lay" id="lay" role="img" aria-label="cross-section"></div><p class="note" data-i="l_note"></p></div>
+<div><h3 data-i="wr_h"></h3><p data-i="wr_p"></p><div id="wbar"></div></div></div>
+<p class="note" data-i="wr_n"></p>
+</div></section>
+
+<section class="sg" id="choose"><div class="wrap">
+<p class="kick">04</p><h2 data-i="ch_h"></h2><p data-i="ch_p"></p>
+<div class="grid g3" style="margin:24px 0">
+<div class="st"><b data-i="s1"></b><span data-i="s1l"></span></div><div class="st"><b data-i="s2"></b><span data-i="s2l"></span></div><div class="st"><b data-i="s3"></b><span data-i="s3l"></span></div></div>
+<p class="note" data-i="st_n"></p>
+<h3 data-i="mk_h" style="margin-top:32px"></h3><p data-i="mk_p"></p><ul class="pills" id="fam"></ul>
+</div></section>
+
+<section id="pri"><div class="wrap">
+<p class="kick">05</p><h2 data-i="pr_h"></h2><div class="ckg" id="ckg"></div><div class="res" id="pres" role="status"></div>
+</div></section>
+
+<section class="alt" id="model"><div class="wrap">
+<p class="kick">06</p><h2 data-i="md_h"></h2>
+<fieldset><label for="md" data-i="md_l"></label><input id="md" list="mlist" maxlength="30" autocomplete="off"><datalist id="mlist"></datalist>
+<p class="mu" id="mex"></p>
+<a class="btn hide" id="mdb" target="_blank" rel="noopener" data-i="md_b"></a></fieldset>
+<p class="note" data-i="md_n"></p>
+</div></section>
+
+<section class="sg" id="cta"><div class="wrap">
+<p class="kick">07</p><h2 data-i="cta_h"></h2><ol class="steps" id="steps"></ol>
+<div class="btns"><a class="btn" href="#model" data-i="c1"></a><a class="btn o" href="#cta-i" data-i="c2"></a><a class="btn o" id="cat" target="_blank" rel="noopener" data-i="c3"></a></div>
+<p class="lead" data-i="cta_sub"></p><p class="note" id="cta-i" data-i="cta_i"></p>
+</div></section>
+</main>
+<footer><div class="wrap"><ul id="notes"></ul><p data-i="foot"></p></div></footer>
+<nav class="sticky" aria-label="CTA"><a class="btn" href="#sim" data-i="sc1"></a><a class="btn o" href="#cta" data-i="sc2"></a></nav>
+
+<script>
+/* ===== PRODUCT_DATA — add other blades here (features marked official:false are NOT stated; confirm on the official site) ===== */
+const PRODUCT_DATA={
+  kiwami:{official:true,wear:{vsStandard:6,vsZ:3},test:"2018-04",
+    layers:[["l_t","#8b8f8c"],["l_z","#b39a6e"],["l_s","#8a6a4a"],["l_z","#b39a6e"],["l_t","#8b8f8c"]]}, // tungsten / Z alloy / steel base / Z alloy / tungsten
+  others:["快適プラスワン","ゼットプラスワン"],   // features intentionally not described
+  company:{years:"100+",variants:"2,000",perYear:"8,000,000"}, // KOBASHI official site (user-supplied)
+  links:{catalog:"https://www.kobashi-kogyo.co.jp/",modelSearch:"https://www.kobashi-kogyo.co.jp/"}, // TODO: replace with official catalog / model-search URLs
+  goalsA:[0,1,2], goalsB:[3,4,5]  // priority indices → KIWAMI (durability) vs. "choose by field & machine"
+};
+/* ===== CALCULATOR_SETTINGS ===== */
+const CALCULATOR_SETTINGS={
+  defaults:{type:"unk",cnt:"3",mn:"90"}, // demo defaults; price fields are never preset
+  max:{cnt:100,mn:1440,pc:1e7,pk:1e7,kc:100,rate:1e5},
+  chips:{cnt:[1,2,3,4],mn:[30,60,90,120]},
+  types:["std","z","oth","unk"],key:"kiwami_v3",locale:{ja:"ja-JP",en:"en-US",vi:"vi-VN"}
+};
+/* ===== MACHINE_DATA — model-prefix suggestions only; real compatibility → KOBASHI official model search ===== */
+const MACHINE_DATA={prefixes:["SE","SV","SRV","SRZ","FTF","FTE","FTV"]};
+/* ===== LANGUAGE_DATA ===== */
+const LANGUAGE_DATA={
+ja:{title:"KOBASHI 極 KIWAMI｜高耐摩耗耕うん爪",brand:"KOBASHI 高耐摩耗耕うん爪「極 KIWAMI」",h1:"その“爪交換”、\n年間で何時間\nかかっていますか？",
+sub:"「極 KIWAMI」は、タングステン硬質合金を採用した高耐摩耗の耕うん爪。\nその価値は、爪1セットの価格だけではありません。交換回数、交換時間、年間コストまで考えると、見え方が変わります。",cta1:"自分の使用条件で確認する",cta2:"極 KIWAMIを見る",
+sim_h:"まずは、3つの数字だけ",sim_p:"わかる範囲で選ぶだけ。最初に入っている数字は例です。",q1:"① 今の爪は？",std:"スタンダード",z:"ゼット系",oth:"その他",unk:"わからない",
+q2:"② 1年に何回、交換しますか？",own_c:"回数を直接入力",q3:"③ 1回の交換にかかる時間は？",own_m:"時間を直接入力（分）",min_n:"90分は、一般的に想定される作業時間の例です。個人差があります。",
+opt_h:"価格や時間の金額も入れて比べる（任意）",p_cur:"今の爪 1セットの価格 [円]",p_kiw:"極 1セットの価格 [円]（販売店の見積もりなど）",k_cnt:"極にした場合の年間交換回数（あなたの想定・任意）",rate:"交換作業1時間を、いくらと考えますか？ [円]（参考値）",
+opt_n:"1セットの価格と、年間の負担は別です。極の価格は型式・セット内容で異なるため、初期値は設けていません。",
+res_h:"あなたの年間交換負担",r_cur:"現在の爪",r_kiw:"極 KIWAMI",r_cnt:"年間交換",r_one:"1回の交換",r_hrs:"年間交換時間",r_cost:"年間爪コスト",r_set:"1セットの価格",r_none:"価格を入力すると表示",cu:"回",mu:"分",hu:"時間",
+kb1:"交換回数を抑制できる可能性",kb2:"交換作業時間を抑制できる可能性",kb3:"年間の爪交換コストを抑える可能性",ksim:"単純試算では、交換回数を抑えられる可能性があります。実際の交換時期は使用条件により異なります。",
+ref_std:"耐摩耗性 約6倍※（スタンダード爪との比較）",ref_z:"耐摩耗性 約3倍※（ゼット爪との比較）",ref_both:"耐摩耗性 約3倍※（ゼット爪比）／約6倍※（スタンダード爪比）",ref_n:"※2018年4月実施の小橋社内テスト結果。使用状況により異なります。結果は入力値にもとづく参考値です。",
+asm_h:"ご入力の想定（交換1回の時間は現在と同じ）",d_less:"年間の交換が {c} 回、交換時間が {h} 時間少なくなる想定です。",d_eq:"年間の交換回数は現在と同じ想定です。",d_more:"想定では、現在より交換が多くなります。",c_less:"年間爪コストは {v} 少なくなる想定です。",c_more:"年間爪コストは {v} 多くなる想定です。",c_eq:"年間爪コストは同じ想定です。",
+val_h:"交換作業時間を金額換算すると（参考値）",q_hrs:"その{h}時間、農作業に使えたら？",
+time_msg:"お金だけではない。\n交換する時間も、農業のコスト。",wear_h:"摩耗すると、何が起きる？",stg:"新品|使用|摩耗|交換",each_h:"交換のたびに発生するもの",each:["部品代","交換作業","トラクター／作業機の停止","作業スケジュールへの影響"],wear_msg:"耐摩耗性の高い爪を選ぶことで、この交換負担を抑えるという考え方があります。",
+kw_h:"母材を硬質合金で守る。",kw_p:"タングステン硬質合金と従来のゼット合金で、はがね（母材）を挟み込む構造により、高い耐摩耗性を実現。KOBASHI史上、最高クラスの耐摩耗性です。",l_t:"タングステン硬質合金",l_z:"従来のゼット合金",l_s:"はがね（母材）",l_note:"構造を示す模式図です。実際の寸法・形状とは異なります。",
+wr_h:"耐摩耗性 約3倍／約6倍※",wr_p:"従来のゼット爪（硬質合金あり）と比べて約3倍、スタンダード爪（硬質合金なし）と比べて約6倍。",g1:"スタンダード爪を100とした場合",g2:"ゼット爪を100とした場合",bs:"スタンダード爪",bk:"極 KIWAMI",bz:"ゼット爪",wr_n:"※2018年4月実施の小橋社内テスト結果。使用状況により異なります。スタンダード爪と極では形状が異なります。耐摩耗性の数値は、交換回数や寿命の倍率をお約束するものではありません。",
+ch_h:"爪は、長持ちすればいいわけではない。",ch_p:"圃場条件、土質、作物、作業機、トラクタ馬力、作業目的によって、適した爪は異なります。KOBASHIには多数の爪のラインアップがあります。",
+s1:"100年以上",s1l:"耕うん爪製造の歴史",s2:"約2,000品種",s2l:"爪のラインアップ",s3:"年間約800万本",s3l:"爪の製造本数",st_n:"※KOBASHI公式サイトの記載にもとづきます。",
+mk_h:"作業機と爪、両方をつくるメーカー",mk_p:"KOBASHIは爪だけでなく、作業機もつくっています。作業機と爪をトータルで設計する考え方で、圃場に合った作業をめざしています。",fam:["ロータリ","アースロータリ","ハイパーロータリ","スピードハロー","土壌改良機","あぜ塗り機","中耕・管理機"],
+pr_h:"何を重視しますか？",pr:["とにかく長持ちさせたい","交換回数を減らしたい","交換作業時間を減らしたい","耕うん性能を重視したい","土の状態に合わせたい","低馬力でも効率よく作業したい"],pr0:"当てはまるものを選んでください。",
+pr_a:"極 KIWAMIは、高い耐摩耗性を特長とする爪です。検討の材料になります。",pr_b:"圃場・作業機によって適した爪は異なります。快適プラスワン、ゼットプラスワンなど、KOBASHIの爪のラインアップから、販売店・KOBASHIと一緒に選びましょう。各爪の特長は公式サイトでご確認ください。",
+md_h:"作業機の型式を入力",md_l:"型式（任意）",md_ex:"型式の先頭の例：",md_b:"適合する極を確認する",md_n:"実際の適合情報は、KOBASHI公式の型式検索・パーツリストでご確認ください。型式が分からなくても、まずはご相談ください。",
+cta_h:"あなたの作業機に合う“極”を探す",steps:["自分の作業機を確認","適合する爪を確認","使用条件・圃場条件を確認","販売店・JA・KOBASHIに相談"],c1:"適合する“極”を探す",c2:"販売店・JA・KOBASHIに相談する",c3:"製品カタログを見る",cta_sub:"型式が分からなくても、まずはご相談ください。",cta_i:"お近くのJA、KOBASHI製品取扱の販売店、KOBASHI営業所へご相談ください。このページに購入機能はありません。",
+notes:["耐摩耗性の数値は2018年4月に実施した小橋工業社内テスト結果です。使用状況により異なります。","実際の交換時期は、使用時間、耕作面積、土質、圃場条件、作業内容などによって異なります。","シミュレーション結果は入力値に基づく参考値です。実際の費用・交換時期を保証するものではありません。","爪の適合については、作業機の型式・機番等をご確認ください。"].map(x=>"※"+x),
+reset:"入力をリセット",local:"入力した数字は、この端末のブラウザ内だけに保存され、外部には送信されません。",foot:"出典：小橋工業株式会社（KOBASHI）公式情報。",sc1:"自分の条件で確認",sc2:"相談する"},
+en:{title:"KOBASHI KIWAMI | High-Wear-Resistance Tiller Blades",brand:"KOBASHI KIWAMI high-wear-resistance tiller blades",h1:"How many hours a year\ndo you spend\nreplacing blades?",
+sub:"KIWAMI is a tiller blade using tungsten hard alloy for high wear resistance.\nIts value is not just the price of one set. Consider replacements, replacement time and annual cost, and the picture changes.",cta1:"Check with my own conditions",cta2:"See KIWAMI",
+sim_h:"Just three numbers to start",sim_p:"Pick what you know. The starting numbers are examples.",q1:"1. Your current blades?",std:"Standard",z:"Z type",oth:"Other",unk:"Not sure",
+q2:"2. Replacements per year?",own_c:"Enter a number",q3:"3. Time per replacement?",own_m:"Enter minutes",min_n:"90 minutes is an example of a commonly assumed time. It varies by person.",
+opt_h:"Add prices and the value of time (optional)",p_cur:"Current blades, price per set [JPY]",p_kiw:"KIWAMI price per set [JPY] (e.g. a dealer quote)",k_cnt:"Replacements per year with KIWAMI (your assumption, optional)",rate:"What is one hour of replacement work worth? [JPY] (reference)",
+opt_n:"Price per set and annual burden are different things. KIWAMI prices vary by model and set, so none is preset.",
+res_h:"Your annual replacement burden",r_cur:"Current blades",r_kiw:"KIWAMI",r_cnt:"Replacements / year",r_one:"Per replacement",r_hrs:"Replacement hours / year",r_cost:"Annual blade cost",r_set:"Price per set",r_none:"Enter a price to see",cu:"×",mu:"min",hu:"h",
+kb1:"May reduce how often you replace",kb2:"May reduce replacement time",kb3:"May reduce annual blade cost",ksim:"In a simple estimate, replacements may be reduced. Actual timing varies with conditions.",
+ref_std:"Wear resistance about 6×* (vs standard blades)",ref_z:"Wear resistance about 3×* (vs Z blades)",ref_both:"Wear resistance about 3×* (vs Z) / about 6×* (vs standard)",ref_n:"*KOBASHI in-house test, April 2018. Varies with usage. Results are reference values from your inputs.",
+asm_h:"Your assumption (replacement time same as now)",d_less:"About {c} fewer replacements and {h} fewer hours per year, as assumed.",d_eq:"Replacements per year are the same as now, as assumed.",d_more:"As assumed, replacements would be more than now.",c_less:"Annual blade cost is {v} lower, as assumed.",c_more:"Annual blade cost is {v} higher, as assumed.",c_eq:"Annual blade cost is the same, as assumed.",
+val_h:"Replacement time in money (reference)",q_hrs:"What could you do with those {h} hours on the farm?",
+time_msg:"It’s not only money.\nReplacement time is a farming cost too.",wear_h:"What happens as blades wear?",stg:"New|In use|Worn|Replace",each_h:"What each replacement involves",each:["Parts cost","Replacement work","Tractor / implement stopped","Effect on the work schedule"],wear_msg:"One way to reduce this burden is to choose blades with higher wear resistance.",
+kw_h:"Protecting the core with hard alloy.",kw_p:"A steel base sandwiched between tungsten hard alloy and conventional Z alloy delivers high wear resistance. KOBASHI’s top-class wear resistance to date.",l_t:"Tungsten hard alloy",l_z:"Conventional Z alloy",l_s:"Steel (base material)",l_note:"Schematic only. Actual dimensions and shape differ.",
+wr_h:"Wear resistance: about 3× / about 6×*",wr_p:"About 3× versus conventional Z blades (with hard alloy), and about 6× versus standard blades (without).",g1:"Standard blade = 100",g2:"Z blade = 100",bs:"Standard blade",bk:"KIWAMI",bz:"Z blade",wr_n:"*KOBASHI in-house test, April 2018. Varies with usage. Standard blades and KIWAMI differ in shape. These figures do not promise replacement counts or service life.",
+ch_h:"Longer-lasting isn’t the only goal.",ch_p:"The right blade depends on field conditions, soil, crop, implement, tractor horsepower and purpose. KOBASHI offers a wide blade lineup.",
+s1:"100+ years",s1l:"making tiller blades",s2:"About 2,000",s2l:"blade varieties",s3:"About 8 million",s3l:"blades made per year",st_n:"*Based on KOBASHI’s official website.",
+mk_h:"A maker of both implements and blades",mk_p:"KOBASHI makes implements as well as blades, and designs them as a whole to suit the field.",fam:["Rotary tillers","Earth rotary","Hyper rotary","Speed harrow","Soil improvers","Levee plasterers","Inter-row cultivators"],
+pr_h:"What matters most to you?",pr:["Make blades last as long as possible","Fewer replacements","Less replacement time","Tilling performance","Match my soil","Work efficiently with low horsepower"],pr0:"Select what applies.",
+pr_a:"KIWAMI is a blade known for high wear resistance, worth considering.",pr_b:"The right blade depends on field and implement. Choose together with your dealer or KOBASHI from the lineup, such as Kaiteki Plus One and Z Plus One. Check each blade’s features on the official site.",
+md_h:"Enter your implement model",md_l:"Model (optional)",md_ex:"Example prefixes: ",md_b:"Check which KIWAMI fits",md_n:"Confirm actual compatibility with KOBASHI’s official model search or parts list. If you don’t know the model, just ask us.",
+cta_h:"Find the KIWAMI for your implement",steps:["Check your implement","Check compatible blades","Check usage and field conditions","Consult a dealer, JA or KOBASHI"],c1:"Find my KIWAMI",c2:"Consult a dealer / JA / KOBASHI",c3:"View product catalog",cta_sub:"Even if you don’t know the model, please ask first.",cta_i:"Please consult your local JA, KOBASHI dealer or sales office. This page has no purchase function.",
+notes:["*Wear-resistance figures are from KOBASHI in-house testing in April 2018 and vary with usage.","Actual replacement timing varies with hours used, area, soil, field conditions and work type.","Simulation results are reference values from your inputs, not a guarantee of cost or timing.","For blade compatibility, check your implement’s model and serial number."],
+reset:"Reset inputs",local:"Numbers are stored only in this browser and never sent out.",foot:"Source: KOBASHI official information.",sc1:"Check mine",sc2:"Consult"},
+vi:{title:"KOBASHI KIWAMI | Lưỡi xới đất chống mài mòn cao",brand:"Lưỡi xới đất chống mài mòn cao KOBASHI KIWAMI",h1:"Mỗi năm bạn mất bao nhiêu giờ\nđể thay lưỡi?",
+sub:"KIWAMI là lưỡi xới đất dùng hợp kim cứng tungsten, chống mài mòn cao.\nGiá trị của nó không chỉ nằm ở giá một bộ. Khi tính cả số lần thay, thời gian thay và chi phí hằng năm, bức tranh sẽ khác đi.",cta1:"Kiểm tra theo điều kiện của tôi",cta2:"Xem KIWAMI",
+sim_h:"Bắt đầu chỉ với ba con số",sim_p:"Chọn những gì bạn biết. Các số ban đầu chỉ là ví dụ.",q1:"1. Lưỡi hiện tại của bạn?",std:"Tiêu chuẩn",z:"Loại Z",oth:"Khác",unk:"Không rõ",
+q2:"2. Mỗi năm thay mấy lần?",own_c:"Nhập số lần",q3:"3. Mỗi lần thay mất bao lâu?",own_m:"Nhập số phút",min_n:"90 phút là ví dụ về thời gian thường được giả định. Mỗi người mỗi khác.",
+opt_h:"Thêm giá và giá trị thời gian (tùy chọn)",p_cur:"Lưỡi hiện tại, giá mỗi bộ [yên]",p_kiw:"Giá KIWAMI mỗi bộ [yên] (ví dụ báo giá từ đại lý)",k_cnt:"Số lần thay mỗi năm nếu dùng KIWAMI (giả định của bạn, tùy chọn)",rate:"Một giờ thay lưỡi có giá trị bao nhiêu? [yên] (tham khảo)",
+opt_n:"Giá một bộ và gánh nặng hằng năm là hai việc khác nhau. Giá KIWAMI thay đổi theo model và bộ sản phẩm nên không đặt sẵn.",
+res_h:"Gánh nặng thay lưỡi hằng năm của bạn",r_cur:"Lưỡi hiện tại",r_kiw:"KIWAMI",r_cnt:"Số lần thay/năm",r_one:"Mỗi lần thay",r_hrs:"Giờ thay lưỡi/năm",r_cost:"Chi phí lưỡi hằng năm",r_set:"Giá mỗi bộ",r_none:"Nhập giá để xem",cu:"lần",mu:"phút",hu:"giờ",
+kb1:"Có thể giảm số lần thay",kb2:"Có thể giảm thời gian thay",kb3:"Có thể giảm chi phí lưỡi hằng năm",ksim:"Theo ước tính đơn giản, số lần thay có thể giảm. Thời điểm thay thực tế tùy điều kiện sử dụng.",
+ref_std:"Chống mài mòn khoảng 6 lần* (so với lưỡi tiêu chuẩn)",ref_z:"Chống mài mòn khoảng 3 lần* (so với lưỡi Z)",ref_both:"Chống mài mòn khoảng 3 lần* (so với Z) / khoảng 6 lần* (so với tiêu chuẩn)",ref_n:"*Kết quả thử nghiệm nội bộ KOBASHI tháng 4/2018. Thay đổi tùy cách sử dụng. Kết quả là giá trị tham khảo từ số liệu bạn nhập.",
+asm_h:"Giả định của bạn (thời gian mỗi lần thay như hiện tại)",d_less:"Theo giả định, mỗi năm giảm {c} lần thay và {h} giờ thay lưỡi.",d_eq:"Theo giả định, số lần thay mỗi năm bằng hiện tại.",d_more:"Theo giả định, số lần thay nhiều hơn hiện tại.",c_less:"Theo giả định, chi phí lưỡi hằng năm thấp hơn {v}.",c_more:"Theo giả định, chi phí lưỡi hằng năm cao hơn {v}.",c_eq:"Theo giả định, chi phí lưỡi hằng năm bằng nhau.",
+val_h:"Quy đổi thời gian thay lưỡi ra tiền (tham khảo)",q_hrs:"Nếu dùng {h} giờ đó cho việc đồng áng thì sao?",
+time_msg:"Không chỉ là tiền.\nThời gian thay lưỡi cũng là chi phí của nhà nông.",wear_h:"Khi lưỡi mòn thì chuyện gì xảy ra?",stg:"Mới|Sử dụng|Mòn|Thay",each_h:"Mỗi lần thay phát sinh",each:["Tiền phụ tùng","Công việc thay lưỡi","Máy kéo / máy xới phải dừng","Ảnh hưởng đến lịch làm việc"],wear_msg:"Một cách để giảm gánh nặng này là chọn lưỡi có khả năng chống mài mòn cao hơn.",
+kw_h:"Dùng hợp kim cứng để bảo vệ lõi.",kw_p:"Thép nền được kẹp giữa hợp kim cứng tungsten và hợp kim Z truyền thống, cho khả năng chống mài mòn cao. Thuộc hàng cao nhất từ trước đến nay của KOBASHI.",l_t:"Hợp kim cứng tungsten",l_z:"Hợp kim Z truyền thống",l_s:"Thép (vật liệu nền)",l_note:"Chỉ là sơ đồ minh họa. Kích thước, hình dạng thực tế có thể khác.",
+wr_h:"Chống mài mòn: khoảng 3 lần / khoảng 6 lần*",wr_p:"Khoảng 3 lần so với lưỡi Z truyền thống (có hợp kim cứng) và khoảng 6 lần so với lưỡi tiêu chuẩn (không có).",g1:"Lưỡi tiêu chuẩn = 100",g2:"Lưỡi Z = 100",bs:"Lưỡi tiêu chuẩn",bk:"KIWAMI",bz:"Lưỡi Z",wr_n:"*Kết quả thử nghiệm nội bộ KOBASHI tháng 4/2018. Thay đổi tùy cách sử dụng. Lưỡi tiêu chuẩn và KIWAMI có hình dạng khác nhau. Các số liệu này không cam kết số lần thay hay tuổi thọ.",
+ch_h:"Bền lâu không phải là tiêu chí duy nhất.",ch_p:"Lưỡi phù hợp phụ thuộc vào điều kiện ruộng, loại đất, cây trồng, máy xới, công suất máy kéo và mục đích. KOBASHI có nhiều dòng lưỡi.",
+s1:"Hơn 100 năm",s1l:"sản xuất lưỡi xới đất",s2:"Khoảng 2.000",s2l:"loại lưỡi",s3:"Khoảng 8 triệu",s3l:"lưỡi sản xuất mỗi năm",st_n:"*Theo thông tin trên trang web chính thức của KOBASHI.",
+mk_h:"Hãng sản xuất cả máy xới lẫn lưỡi",mk_p:"KOBASHI sản xuất cả máy xới và lưỡi, thiết kế tổng thể sao cho phù hợp với ruộng.",fam:["Máy xới quay","Máy xới Earth","Máy xới Hyper","Bừa Speed","Máy cải tạo đất","Máy trét bờ","Máy xới xen hàng"],
+pr_h:"Bạn coi trọng điều gì nhất?",pr:["Muốn lưỡi bền nhất có thể","Giảm số lần thay","Giảm thời gian thay","Hiệu quả xới đất","Phù hợp với đất của tôi","Làm việc hiệu quả dù công suất thấp"],pr0:"Hãy chọn mục phù hợp.",
+pr_a:"KIWAMI là lưỡi có đặc điểm chống mài mòn cao, đáng để cân nhắc.",pr_b:"Lưỡi phù hợp tùy vào ruộng và máy xới. Hãy cùng đại lý hoặc KOBASHI chọn trong các dòng lưỡi như Kaiteki Plus One, Z Plus One. Vui lòng xem đặc điểm từng loại trên trang chính thức.",
+md_h:"Nhập model máy xới",md_l:"Model (tùy chọn)",md_ex:"Ví dụ ký hiệu đầu: ",md_b:"Kiểm tra KIWAMI phù hợp",md_n:"Hãy xác nhận độ tương thích thực tế qua công cụ tra cứu model hoặc danh mục phụ tùng chính thức của KOBASHI. Nếu không biết model, cứ liên hệ chúng tôi.",
+cta_h:"Tìm KIWAMI phù hợp với máy xới của bạn",steps:["Kiểm tra máy xới của bạn","Kiểm tra lưỡi tương thích","Kiểm tra điều kiện sử dụng và ruộng","Tư vấn với đại lý, JA hoặc KOBASHI"],c1:"Tìm KIWAMI phù hợp",c2:"Tư vấn với đại lý / JA / KOBASHI",c3:"Xem catalog sản phẩm",cta_sub:"Dù không biết model, hãy cứ liên hệ trước.",cta_i:"Vui lòng liên hệ JA, đại lý KOBASHI hoặc văn phòng KOBASHI gần bạn. Trang này không có chức năng mua hàng.",
+notes:["*Số liệu chống mài mòn là kết quả thử nghiệm nội bộ của KOBASHI tháng 4/2018, thay đổi tùy cách sử dụng.","Thời điểm thay thực tế thay đổi tùy giờ sử dụng, diện tích, loại đất, điều kiện ruộng và nội dung công việc.","Kết quả mô phỏng là giá trị tham khảo từ số liệu bạn nhập, không đảm bảo chi phí hay thời điểm thay.","Về độ tương thích của lưỡi, hãy kiểm tra model và số máy của máy xới."],
+reset:"Đặt lại",local:"Các con số chỉ được lưu trong trình duyệt này và không gửi đi đâu.",foot:"Nguồn: thông tin chính thức của KOBASHI.",sc1:"Kiểm tra",sc2:"Tư vấn"}
+};
+/* ===== LOGIC (pure calculation, no UI) ===== */
+const $=i=>document.getElementById(i),C=CALCULATOR_SETTINGS,P=PRODUCT_DATA,IDS=["cnt","mn","pc","pk","kc","rate"];
+let L="ja",type=C.defaults.type;try{L=localStorage.getItem("kk_l")||"ja"}catch(e){}if(!LANGUAGE_DATA[L])L="ja";
+const t=k=>LANGUAGE_DATA[L][k]!==undefined?LANGUAGE_DATA[L][k]:LANGUAGE_DATA.ja[k];
+const fmt=(n,d=1)=>n.toLocaleString(C.locale[L],{maximumFractionDigits:d}),yen=n=>"¥"+fmt(n,0);
+function num(id){const e=$(id);if(e.value==="")return null;const v=parseFloat(e.value),bad=!isFinite(v)||v<0;e.classList.toggle("bad",bad);e.setAttribute("aria-invalid",bad);return bad?null:Math.min(v,C.max[id])}
+function simulate(){const cnt=num("cnt"),mn=num("mn"),pc=num("pc"),pk=num("pk"),kc=num("kc"),rate=num("rate");
+const h=c=>c!==null&&mn!==null?c*mn/60:null,cost=(c,p)=>c!==null&&p!==null?c*p:null;
+return{cnt,mn,pc,pk,rate,cur:{h:h(cnt),cost:cost(cnt,pc)},asm:kc===null?null:{cnt:kc,h:h(kc),cost:cost(kc,pk)}}}
+/* ===== UI ===== */
+const cLabel=n=>({ja:"年"+n+"回"+(n===4?"以上":""),en:n+"×/yr"+(n===4?"+":""),vi:n+" lần/năm"+(n===4?"+":"")})[L],mLabel=m=>m+({ja:"分",en:" min",vi:" phút"})[L];
+function chips(){$("c_type").innerHTML=C.types.map(k=>`<button type="button" class="chip" data-k="type" data-v="${k}">${t(k)}</button>`).join("");
+$("c_cnt").innerHTML=C.chips.cnt.map(v=>`<button type="button" class="chip" data-k="cnt" data-v="${v}">${cLabel(v)}</button>`).join("");
+$("c_mn").innerHTML=C.chips.mn.map(v=>`<button type="button" class="chip" data-k="mn" data-v="${v}">${mLabel(v)}</button>`).join("")}
+function mark(){document.querySelectorAll("#sim .chip[data-k]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.k==="type"?type===b.dataset.v:$(b.dataset.k).value===b.dataset.v))}
+const line=(k,v)=>`<div class="big"><span>${t(k)}</span><b>${v}</b></div>`;
+function calc(){const S=simulate(),H=v=>v===null?"–":fmt(v)+" "+t("hu"),Y=v=>v===null?`<small style="font-size:.85rem;font-weight:400">${t("r_none")}</small>`:yen(v);
+const ref=type==="std"?"ref_std":type==="z"?"ref_z":"ref_both";
+$("ba").innerHTML=`<div class="card"><span class="tag" style="background:var(--mu)">${t("r_cur")}</span>${line("r_cnt",S.cnt===null?"–":fmt(S.cnt)+" "+t("cu"))}${line("r_one",S.mn===null?"–":fmt(S.mn,0)+" "+t("mu"))}${line("r_hrs",H(S.cur.h))}${line("r_cost",Y(S.cur.cost))}</div>
+<div class="arr" aria-hidden="true">▼</div>
+<div class="card after"><span class="tag">${t("r_kiw")}</span><ul><li>${t("kb1")}</li><li>${t("kb2")}</li><li>${t("kb3")}</li></ul><p style="font-weight:700;margin:10px 0 4px">${t(ref)}</p><p class="mu" style="margin:0;font-size:.95rem">${t("ksim")}</p></div>`;
+let x="";
+if(S.asm){const a=S.asm;let m="";if(S.cnt!==null){const d=S.cnt-a.cnt;m=d>0?t("d_less").replace("{c}",fmt(d)).replace("{h}",S.cur.h!==null&&a.h!==null?fmt(S.cur.h-a.h):"–"):d===0?t("d_eq"):t("d_more")}
+if(S.cur.cost!==null&&a.cost!==null){const d=S.cur.cost-a.cost;m+=" "+(d>0?t("c_less").replace("{v}",yen(d)):d<0?t("c_more").replace("{v}",yen(-d)):t("c_eq"))}
+x+=`<div class="card"><h3>${t("asm_h")}</h3>${line("r_cnt",fmt(a.cnt)+" "+t("cu"))}${line("r_hrs",H(a.h))}${line("r_cost",Y(a.cost))}<p>${m}</p></div>`}
+if(S.pc!==null||S.pk!==null)x+=`<div class="card"><h3>${t("r_set")}</h3>${line("r_cur",S.pc===null?"–":yen(S.pc))}${line("r_kiw",S.pk===null?"–":yen(S.pk))}<p class="mu" style="font-size:.95rem">${t("opt_n")}</p></div>`;
+if(S.rate!==null&&S.cur.h!==null)x+=`<div class="card"><h3>${t("val_h")}</h3>${line("r_cur",yen(S.cur.h*S.rate))}${S.asm&&S.asm.h!==null?line("r_kiw",yen(S.asm.h*S.rate)):""}</div>`;
+$("extra").innerHTML=x;$("rq").textContent=S.cur.h!==null&&S.cur.h>0?t("q_hrs").replace("{h}",fmt(S.cur.h)):"";
+try{const o={type};IDS.forEach(i=>o[i]=$(i).value);localStorage.setItem(C.key,JSON.stringify(o))}catch(e){}mark()}
+const blade=(hw,ty)=>`<svg viewBox="0 0 60 92" width="48" height="74" aria-hidden="true"><path d="M18 0H42V40L${30+hw} ${ty}H${30-hw}L18 40Z" fill="#8a6a4a"/></svg>`;
+function pri(){const on=[...document.querySelectorAll("#ckg input:checked")].map(x=>+x.value),a=on.some(i=>P.goalsA.includes(i)),b=on.some(i=>P.goalsB.includes(i));
+$("pres").innerHTML=!on.length?t("pr0"):(a?`<p style="margin:0 0 8px">${t("pr_a")}</p>`:"")+(b?`<p style="margin:0">${t("pr_b")}</p>`:"")}
+const mdl=()=>$("mdb").classList.toggle("hide",!$("md").value.trim());
+function render(){document.documentElement.lang=L;document.title=t("title");
+document.querySelectorAll("[data-i]").forEach(e=>{const v=t(e.dataset.i);if(typeof v==="string")e.textContent=v});
+document.querySelectorAll("[data-l]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===L));
+chips();
+$("stg").innerHTML=t("stg").split("|").map((s,i)=>`<div>${blade([6,9,15,20][i],[86,80,66,58][i])}<br>${s}</div>`).join("");
+$("each").innerHTML=t("each").map(x=>`<li>${x}</li>`).join("");
+$("lay").innerHTML=P.kiwami.layers.map(([k,c],i)=>`<div style="background:${c};padding:${i===2?"34px":"14px"} 14px">${t(k)}</div>`).join("");
+const w=P.kiwami.wear,bar=(n,v,max,c)=>`<div class="bar"><p>${n}</p><div class="track"><i style="width:${v/max*100}%;background:${c}">${v}</i></div></div>`;
+$("wbar").innerHTML=`<p class="mu" style="margin:0">${t("g1")}</p>`+bar(t("bs"),100,100*w.vsStandard,"#a89f86")+bar(t("bk")+" (≈)",100*w.vsStandard,100*w.vsStandard,"#4f6f4c")+`<p class="mu" style="margin:14px 0 0">${t("g2")}</p>`+bar(t("bz"),100,100*w.vsZ,"#a89f86")+bar(t("bk")+" (≈)",100*w.vsZ,100*w.vsZ,"#4f6f4c");
+$("fam").innerHTML=t("fam").map(x=>`<li>${x}</li>`).join("");
+const on=[...document.querySelectorAll("#ckg input:checked")].map(x=>+x.value);
+$("ckg").innerHTML=t("pr").map((x,i)=>`<label><input type="checkbox" value="${i}" ${on.includes(i)?"checked":""}>${x}</label>`).join("");
+$("mlist").innerHTML=MACHINE_DATA.prefixes.map(p=>`<option value="${p}">`).join("");$("mex").textContent=t("md_ex")+MACHINE_DATA.prefixes.join(" / ");
+$("steps").innerHTML=t("steps").map(x=>`<li>${x}</li>`).join("");$("notes").innerHTML=t("notes").map(x=>`<li>${x}</li>`).join("");
+$("cat").href=P.links.catalog;$("mdb").href=P.links.modelSearch;pri();mdl();calc()}
+try{const s=JSON.parse(localStorage.getItem(C.key)||"null")||Object.assign({},C.defaults);type=s.type||type;IDS.forEach(i=>{$(i).value=s[i]!==undefined?s[i]:(C.defaults[i]||"")})}catch(e){IDS.forEach(i=>$(i).value=C.defaults[i]||"")}
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+if(b.dataset.l){L=b.dataset.l;try{localStorage.setItem("kk_l",L)}catch(x){}render()}
+else if(b.dataset.k==="type"){type=b.dataset.v;calc()}else if(b.dataset.k){$(b.dataset.k).value=b.dataset.v;calc()}});
+document.addEventListener("input",e=>{if(IDS.includes(e.target.id))calc();if(e.target.id==="md")mdl()});
+$("ckg").addEventListener("change",pri);
+$("reset").onclick=()=>{type=C.defaults.type;IDS.forEach(i=>$(i).value=C.defaults[i]||"");calc()};
+render();
+</script>
+</body>
+</html>
